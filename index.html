@@ -1,0 +1,541 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport"/><meta content="mobile_tab" name="shell-type"/><style>@layer base{html,body{width:100vw;margin:0;padding:0;background-color:#fff8f5;}body{overscroll-behavior:y;}.pb-safe{padding-bottom:env(safe-area-inset-bottom,0px);}.pt-safe{padding-top:env(safe-area-inset-top,0px);}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" rel="stylesheet"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&amp;family=Plus+Jakarta+Sans:wght@600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { colors: { "surface-tint": "#3a674f", "surface-container-low": "#fff1e8", "on-error-container": "#93000a", "outline": "#717973", "surface-container-lowest": "#ffffff", "primary": "#14422d", "secondary-fixed-dim": "#b5ccc1", "secondary-fixed": "#d1e8dd", "on-tertiary-fixed": "#281900", "primary-fixed-dim": "#a1d1b4", "on-primary-fixed-variant": "#224f39", "error": "#ba1a1a", "tertiary-container": "#6d4b00", "error-container": "#ffdad6", "surface-container-high": "#ffe3cd", "tertiary-fixed": "#ffdeac", "secondary": "#4e635a", "on-secondary-container": "#52675e", "outline-variant": "#c0c9c1", "surface-dim": "#fbd3b1", "on-secondary-fixed": "#0b1f18", "on-tertiary-fixed-variant": "#604100", "inverse-on-surface": "#ffeee1", "on-primary-container": "#9fcfb2", "surface-variant": "#ffdcc0", "on-secondary": "#ffffff", "on-primary": "#ffffff", "primary-container": "#2d5a43", "on-primary-fixed": "#002112", "on-tertiary": "#ffffff", "background": "#fff8f5", "surface-container-highest": "#ffdcc0", "surface": "#fff8f5", "surface-container": "#ffeadb", "on-tertiary-container": "#f8ba48", "on-error": "#ffffff", "inverse-surface": "#432b14", "inverse-primary": "#a1d1b4", "tertiary": "#503500", "surface-bright": "#fff8f5", "on-background": "#2b1703", "on-surface": "#2b1703", "tertiary-fixed-dim": "#fabc4a", "on-secondary-fixed-variant": "#374b43", "secondary-container": "#cee5da", "on-surface-variant": "#414943", "primary-fixed": "#bceecf" }, borderRadius: { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" }, spacing: { "space-lg": "1.5rem", "space-2xl": "4rem", "margin-mobile": "1.25rem", "space-xl": "2.5rem", "space-xs": "0.25rem", "space-md": "1rem", "margin": "3rem", "gutter-mobile": "1rem", "gutter": "1.5rem", "space-sm": "0.5rem" }, fontFamily: { "body-sm": ["Inter"], "label-lg": ["Plus Jakarta Sans"], "label-sm": ["Plus Jakarta Sans"], "body-lg": ["Inter"], "label-md": ["Plus Jakarta Sans"], "display-lg-mobile": ["Plus Jakarta Sans"], "headline-md": ["Plus Jakarta Sans"], "body-md": ["Inter"], "headline-xl-mobile": ["Plus Jakarta Sans"], "display-lg": ["Plus Jakarta Sans"], "headline-sm": ["Plus Jakarta Sans"], "headline-lg": ["Plus Jakarta Sans"], "headline-xl": ["Plus Jakarta Sans"] }, fontSize: { "body-sm": ["14px", { "lineHeight": "20px", "letterSpacing": "0.01em", "fontWeight": "400" }], "label-lg": ["14px", { "lineHeight": "20px", "letterSpacing": "0.02em", "fontWeight": "600" }], "label-sm": ["11px", { "lineHeight": "14px", "letterSpacing": "0.06em", "fontWeight": "700" }], "body-lg": ["18px", { "lineHeight": "28px", "letterSpacing": "-0.01em", "fontWeight": "400" }], "label-md": ["12px", { "lineHeight": "16px", "letterSpacing": "0.04em", "fontWeight": "600" }], "display-lg-mobile": ["36px", { "lineHeight": "44px", "letterSpacing": "-0.02em", "fontWeight": "700" }], "headline-md": ["22px", { "lineHeight": "30px", "letterSpacing": "-0.01em", "fontWeight": "600" }], "body-md": ["16px", { "lineHeight": "24px", "letterSpacing": "0em", "fontWeight": "400" }], "headline-xl-mobile": ["28px", { "lineHeight": "36px", "letterSpacing": "-0.01em", "fontWeight": "600" }], "display-lg": ["56px", { "lineHeight": "64px", "letterSpacing": "-0.03em", "fontWeight": "700" }], "headline-sm": ["18px", { "lineHeight": "24px", "letterSpacing": "0em", "fontWeight": "600" }], "headline-lg": ["28px", { "lineHeight": "36px", "letterSpacing": "-0.015em", "fontWeight": "600" }], "headline-xl": ["40px", { "lineHeight": "48px", "letterSpacing": "-0.02em", "fontWeight": "600" }] } } } };</script></head><body class="bg-surface font-body-md text-body-md text-on-surface flex flex-col min-h-screen"><header class="fixed top-0 inset-x-0 z-50 bg-surface/85 backdrop-blur-xl pt-safe shadow-[0_1px_8px_rgba(78,54,41,0.05)]"><div class="h-16 px-gutter-mobile flex items-center justify-between"><div class="flex items-center gap-space-sm"><img alt="BioVerdant Flame Leaf Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1W0fRe2tKC1e0fuGsCEVMWfq0-Qkm5VI5nPc3Jc7n-GNRmg-UYmLNFcR1oO3PrcA6JLj0fWJyW7bajJG4j_naPdo9FQpVtoYBAAfmGzQ75PSWFTGjdXVuLjP0SF5psto2nhkUN6YDqcUe3R7plsYa23TsP5c_ajhaT1IOE9N8-nNLWYXUhSzmN6R4WwH1PF7PYgs7c692iaASvHsK4pSteGpYUbbSUG5sNxHC-1QDOpdf_i-6pKDpqLl3A"/><div class="flex items-center gap-space-xs"><span class="font-headline-sm text-headline-sm font-semibold tracking-tight text-primary">BioVerdant</span><span class="px-2 py-0.5 rounded-full bg-secondary-container text-on-secondary-container font-label-sm text-label-sm">CleanTech</span></div></div><div class="flex items-center gap-space-xs"><button aria-label="Menu" class="w-11 h-11 flex items-center justify-center text-on-surface hover:text-primary transition-colors"><span class="material-symbols-outlined">menu</span></button><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></header><main class="flex flex-col relative w-full pt-16 pb-24 bg-surface min-h-screen"><div class="flex flex-col w-full">
+<!-- SECTION 1: HERO -->
+<section class="relative px-gutter-mobile pt-4 pb-10 flex flex-col gap-6 overflow-hidden">
+<!-- Ambient organic glow aura -->
+<div class="absolute -top-12 -right-12 w-64 h-64 bg-secondary-container/40 rounded-full blur-3xl pointer-events-none"></div>
+<div class="absolute top-48 -left-20 w-56 h-56 bg-surface-container-high/60 rounded-full blur-2xl pointer-events-none"></div>
+<!-- Organic Pill Micro Tag -->
+<div class="inline-flex items-center gap-2 self-start px-3 py-1.5 rounded-full bg-secondary-container text-on-secondary-container shadow-sm">
+<span class="w-2 h-2 rounded-full bg-surface-tint animate-pulse"></span>
+<span class="font-label-sm text-label-sm uppercase tracking-wider">Decentralized CleanTech Engine</span>
+</div>
+<!-- Main Headline with warm sunlight accents -->
+<div class="flex flex-col gap-3">
+<h1 class="font-headline-xl-mobile text-headline-xl-mobile text-primary tracking-tight">
+        Transforming Organic Waste into <span class="text-tertiary-container bg-surface-container px-2 py-0.5 rounded-lg inline-block">Clean Biogas</span> Energy
+      </h1>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+        Empowering communities and eco-enterprises with autonomous micro-digestion tech, converting daily food scrap and coffee grounds into decentralized renewable electricity and methane power.
+      </p>
+</div>
+<!-- Action Buttons -->
+<div class="flex flex-col sm:flex-row gap-3 pt-1">
+<a class="flex items-center justify-center gap-2 bg-primary-container text-on-primary font-label-lg text-label-lg px-6 py-3.5 rounded-full shadow-md active:scale-95 transition-all" href="#process">
+<span class="material-symbols-outlined text-[20px]">cyclone</span>
+        Explore Process
+      </a>
+<a class="flex items-center justify-center gap-2 bg-surface-container-lowest text-primary font-label-lg text-label-lg px-6 py-3.5 rounded-full shadow-sm hover:bg-surface-container-low active:scale-95 transition-all" href="#chat">
+<span class="material-symbols-outlined text-tertiary text-[20px]">smart_toy</span>
+        Try AI Chat
+      </a>
+</div>
+<!-- Hero Visual Anchor Card -->
+<div class="relative w-full rounded-2xl overflow-hidden shadow-md bg-surface-container-low mt-2">
+<img class="w-full h-48 object-cover" data-alt="A sun-drenched, beautifully designed eco-conscious open-air café nestled in lush tropical greenery, featuring stainless-steel compact bio-digester chambers discreetly blending with organic warm timber architecture and modern solar canopies. Natural daylight, warm earth tones, sustainable hospitality atmosphere." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAJ8KjhyiM2CvZF75vcDm84YZs-8DEq63yFgyVPu_ghoBvE9ckGjn4dReZoumJImqLJ01ibqOjVhcifu08UI-89tKfhNN_Su_fAZchrL33BpppPfRy0xfOSEjplPlw2k-Go91q3YLUvFvjxHv4ct7mJglbjEtnJ7f9ksGSLQpgkXrtxqM8O6CKODuvhOwjfMDehA9A3WgjqK8CsLmWvF5-5jj6U3J-_cRBBy8RqTxBJxEyP5eWHPNPC"/>
+<div class="absolute inset-0 bg-gradient-to-t from-primary/75 via-transparent to-transparent flex items-end p-4">
+<div class="flex items-center gap-2 text-on-primary">
+<span class="material-symbols-outlined text-[20px] text-tertiary-fixed">eco</span>
+<span class="font-label-md text-label-md">Live Micro-Hub: Zero Landfill Kitchen Network</span>
+</div>
+</div>
+</div>
+<!-- Stat Badges Pill Strip -->
+<div class="flex gap-2.5 overflow-x-auto pb-2 pt-1 no-scrollbar -mx-gutter-mobile px-gutter-mobile">
+<div class="flex items-center gap-2 bg-surface-container-lowest px-3.5 py-2.5 rounded-full shadow-sm whitespace-nowrap shrink-0">
+<span class="material-symbols-outlined text-surface-tint text-[18px]">psychiatry</span>
+<span class="font-label-sm text-label-sm text-primary font-semibold">99.4% Digestion Efficiency</span>
+</div>
+<div class="flex items-center gap-2 bg-surface-container-lowest px-3.5 py-2.5 rounded-full shadow-sm whitespace-nowrap shrink-0">
+<span class="material-symbols-outlined text-tertiary text-[18px]">bolt</span>
+<span class="font-label-sm text-label-sm text-primary font-semibold">12.8 MWh Generated</span>
+</div>
+<div class="flex items-center gap-2 bg-surface-container-lowest px-3.5 py-2.5 rounded-full shadow-sm whitespace-nowrap shrink-0">
+<span class="material-symbols-outlined text-tertiary-container text-[18px]">local_cafe</span>
+<span class="font-label-sm text-label-sm text-primary font-semibold">450+ Café Partners</span>
+</div>
+</div>
+</section>
+<!-- SECTION 2: AI PROCESS & STEP CONTAINER -->
+<section class="px-gutter-mobile py-8 bg-surface-container-low flex flex-col gap-5" id="process">
+<div class="flex items-center justify-between">
+<div class="flex flex-col gap-1">
+<span class="font-label-sm text-label-sm text-tertiary uppercase tracking-wider">Automated Conversion Loop</span>
+<h2 class="font-headline-md text-headline-md text-primary">Autonomous Waste-to-Energy Flow</h2>
+</div>
+<span class="inline-flex items-center gap-1 bg-surface-container-highest text-on-surface-variant font-label-sm text-label-sm px-2.5 py-1 rounded-full shadow-sm shrink-0">
+<span class="material-symbols-outlined text-[14px] text-surface-tint">memory</span>
+        Neural Bio-Monitor v2.4
+      </span>
+</div>
+<!-- Mockup Player Container -->
+<div class="bg-surface-container-lowest rounded-2xl overflow-hidden shadow-md flex flex-col">
+<!-- Player Video Area -->
+<div class="relative w-full h-56 bg-inverse-surface flex flex-col justify-between p-4 overflow-hidden">
+<img class="absolute inset-0 w-full h-full object-cover opacity-60" data-alt="Close-up cinematic macro shot of an aerobic bio-fermentation observation window showing active effervescent microbial bubbles breaking down enriched coffee grinds into pure biomethane gas inside a polished cylindrical chamber. Warm studio lighting with subtle green and amber neon luminescence." src="https://lh3.googleusercontent.com/aida-public/AB6AXuD1emgIa-M2Z9eJiDmxh32I2hgu9GJ47JDWvIWF8YG4H6yCB7enun89mKwtb3f0-V5AsdOrC3TqtyQz9L6Z5gucHBt8QjlFiKPLZiedxVm30DGRmDI4wbhuct6u-rkAHORM1j4hEWP5_yWc9WAQ4ji3TS06kv8839ff5NsIr11z7x6EA7DkYUc0Y1N6dSs8spBwtko-88C7KbYRl-t1CxW7Y93jn92eWacHgW8W9M98J7xM8DWDoAgS"/>
+<!-- Live HUD Overlay -->
+<div class="relative z-10 flex items-center justify-between w-full">
+<div class="flex items-center gap-2 bg-surface-container-lowest/80 backdrop-blur-md px-2.5 py-1 rounded-full shadow-sm">
+<span class="w-2 h-2 rounded-full bg-error animate-ping"></span>
+<span class="font-label-sm text-label-sm text-on-surface font-semibold">BIO-REC-01 LIVE</span>
+</div>
+<div class="bg-primary-container text-on-primary px-2.5 py-1 rounded-full font-label-sm text-label-sm flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">thermostat</span>
+<span>54.2°C Optima</span>
+</div>
+</div>
+<!-- Center Interactive Play Overlay -->
+<div class="relative z-10 self-center my-auto flex items-center justify-center">
+<button aria-label="Play bio-reactor simulation" class="w-14 h-14 rounded-full bg-primary-container/90 text-on-primary flex items-center justify-center shadow-lg active:scale-90 transition-transform" id="processPlayBtn">
+<span class="material-symbols-outlined text-[32px]" id="playIcon">play_arrow</span>
+</button>
+</div>
+<!-- Bottom HUD telemetry -->
+<div class="relative z-10 grid grid-cols-3 gap-2 bg-inverse-surface/85 backdrop-blur-md p-2 rounded-xl text-inverse-on-surface">
+<div class="flex flex-col">
+<span class="font-label-sm text-[10px] text-surface-dim uppercase">Chamber Temp</span>
+<span class="font-label-md text-label-md font-bold text-surface-bright">54.2°C</span>
+</div>
+<div class="flex flex-col">
+<span class="font-label-sm text-[10px] text-surface-dim uppercase">CH4 Purity</span>
+<span class="font-label-md text-label-md font-bold text-tertiary-fixed">97.8%</span>
+</div>
+<div class="flex flex-col">
+<span class="font-label-sm text-[10px] text-surface-dim uppercase">Pressure</span>
+<span class="font-label-md text-label-md font-bold text-surface-bright">2.3 bar</span>
+</div>
+</div>
+</div>
+<!-- Scrubber Timeline -->
+<div class="px-4 pt-3 flex flex-col gap-1.5">
+<div class="w-full bg-surface-container h-1.5 rounded-full overflow-hidden">
+<div class="bg-surface-tint h-full w-2/3 rounded-full transition-all duration-300" id="simulatedProgress"></div>
+</div>
+<div class="flex justify-between font-label-sm text-label-sm text-on-surface-variant">
+<span>Stage 02 Active</span>
+<span>Cyclic Loop: 18h 40m remaining</span>
+</div>
+</div>
+<!-- 3 Stage Flow Selector Tabs -->
+<div class="p-4 flex flex-col gap-3">
+<div class="grid grid-cols-3 gap-1.5 bg-surface-container-low p-1 rounded-xl" id="stageTabs">
+<button class="stage-tab py-2 px-1 text-center rounded-lg font-label-sm text-label-sm font-semibold transition-all bg-surface-container-lowest text-primary shadow-sm" data-stage="1">
+            01. Inflow
+          </button>
+<button class="stage-tab py-2 px-1 text-center rounded-lg font-label-sm text-label-sm font-semibold transition-all text-on-surface-variant hover:text-primary" data-stage="2">
+            02. Digester
+          </button>
+<button class="stage-tab py-2 px-1 text-center rounded-lg font-label-sm text-label-sm font-semibold transition-all text-on-surface-variant hover:text-primary" data-stage="3">
+            03. Energy
+          </button>
+</div>
+<!-- Dynamic Stage Description Box -->
+<div class="bg-surface-container-low p-4 rounded-xl flex flex-col gap-2" id="stageContent">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-surface-tint">coffee_maker</span>
+<h3 class="font-label-lg text-label-lg text-primary font-semibold">Stage 1: Organic Waste Inflow</h3>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+            Food scraps &amp; café coffee ground sorting with moisture spectroscopy and high-speed mechanical shredding for bio-cell readiness.
+          </p>
+<div class="flex items-center gap-2 mt-1">
+<span class="px-2 py-0.5 rounded-full bg-secondary-container text-on-secondary-container font-label-sm text-label-sm">Auto-pH Scan: 6.8</span>
+<span class="px-2 py-0.5 rounded-full bg-surface-container text-on-surface-variant font-label-sm text-label-sm">Moisture: 78%</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- SECTION 3: WASTE TRACKING & CAFÉ SEARCH -->
+<section class="px-gutter-mobile py-8 flex flex-col gap-6">
+<div class="flex flex-col gap-1">
+<div class="flex items-center gap-1.5 text-tertiary">
+<span class="material-symbols-outlined text-[18px]">storefront</span>
+<span class="font-label-sm text-label-sm uppercase tracking-wide">Community Impact Engine</span>
+</div>
+<h2 class="font-headline-md text-headline-md text-primary">Branch Waste Tracking &amp; Impact Search</h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+        Monitor real-time spent grounds conversion across partner artisanal roasteries and urban kitchens.
+      </p>
+</div>
+<!-- Search Input Bar -->
+<div class="flex flex-col gap-2.5">
+<div class="relative flex items-center">
+<span class="material-symbols-outlined absolute left-3.5 text-on-surface-variant">search</span>
+<input class="w-full bg-surface-container-lowest text-on-surface placeholder:text-outline-variant font-body-sm text-body-sm pl-11 pr-10 py-3.5 rounded-2xl shadow-sm focus:outline-none focus:ring-2 focus:ring-surface-tint" id="branchSearchInput" placeholder="Search café branch, roastery, or urban kitchen..." type="text"/>
+<button aria-label="Clear search" class="absolute right-3.5 text-on-surface-variant hidden" id="clearSearchBtn">
+<span class="material-symbols-outlined text-[18px]">close</span>
+</button>
+</div>
+<!-- Quick Category Filter Chips -->
+<div class="flex gap-2 overflow-x-auto pb-1 no-scrollbar -mx-gutter-mobile px-gutter-mobile" id="categoryChips">
+<button class="cat-chip active px-3.5 py-1.5 rounded-full font-label-sm text-label-sm bg-primary-container text-on-primary whitespace-nowrap shadow-sm">All Branches</button>
+<button class="cat-chip px-3.5 py-1.5 rounded-full font-label-sm text-label-sm bg-surface-container text-on-surface-variant whitespace-nowrap">Cafés &amp; Bakeries</button>
+<button class="cat-chip px-3.5 py-1.5 rounded-full font-label-sm text-label-sm bg-surface-container text-on-surface-variant whitespace-nowrap">Produce Markets</button>
+<button class="cat-chip px-3.5 py-1.5 rounded-full font-label-sm text-label-sm bg-surface-container text-on-surface-variant whitespace-nowrap">Urban Farms</button>
+</div>
+</div>
+<!-- Live Aggregated Impact Statistics -->
+<div class="grid grid-cols-2 gap-3">
+<div class="bg-surface-container-lowest p-4 rounded-2xl shadow-sm flex flex-col justify-between gap-2">
+<div class="flex items-center justify-between text-on-surface-variant">
+<span class="font-label-sm text-label-sm uppercase text-tertiary">Ingested Waste</span>
+<span class="material-symbols-outlined text-surface-tint text-[20px]">compost</span>
+</div>
+<div>
+<div class="font-headline-md text-headline-md text-primary font-bold">148,520 kg</div>
+<div class="inline-flex items-center gap-1 font-label-sm text-label-sm text-surface-tint font-semibold mt-0.5">
+<span class="material-symbols-outlined text-[14px]">arrow_upward</span>
+            +12% this month
+          </div>
+</div>
+</div>
+<div class="bg-surface-container-lowest p-4 rounded-2xl shadow-sm flex flex-col justify-between gap-2">
+<div class="flex items-center justify-between text-on-surface-variant">
+<span class="font-label-sm text-label-sm uppercase text-tertiary">Biogas Converted</span>
+<span class="material-symbols-outlined text-tertiary-fixed-dim text-[20px]">propane_tank</span>
+</div>
+<div>
+<div class="font-headline-md text-headline-md text-primary font-bold">62,380 m³</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Pressurized Bio-CNG</span>
+</div>
+</div>
+<div class="bg-surface-container-lowest p-4 rounded-2xl shadow-sm flex flex-col justify-between gap-2">
+<div class="flex items-center justify-between text-on-surface-variant">
+<span class="font-label-sm text-label-sm uppercase text-tertiary">Clean Power</span>
+<span class="material-symbols-outlined text-tertiary text-[20px]">bolt</span>
+</div>
+<div>
+<div class="font-headline-md text-headline-md text-primary font-bold">124,760 kWh</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Decentralized Grid</span>
+</div>
+</div>
+<div class="bg-surface-container-lowest p-4 rounded-2xl shadow-sm flex flex-col justify-between gap-2">
+<div class="flex items-center justify-between text-on-surface-variant">
+<span class="font-label-sm text-label-sm uppercase text-tertiary">Offset Carbon</span>
+<span class="material-symbols-outlined text-surface-tint text-[20px]">forest</span>
+</div>
+<div>
+<div class="font-headline-md text-headline-md text-primary font-bold">89.4 tons</div>
+<span class="font-label-sm text-label-sm text-surface-tint font-semibold">CO2e Neutralized</span>
+</div>
+</div>
+</div>
+<!-- Featured Partner Spotlight Card -->
+<div class="bg-surface-container p-5 rounded-2xl shadow-sm flex flex-col gap-4">
+<div class="flex items-start justify-between">
+<div class="flex items-center gap-3">
+<div class="w-12 h-12 rounded-xl bg-tertiary-container flex items-center justify-center text-on-tertiary shadow-sm">
+<span class="material-symbols-outlined text-[26px]">coffee</span>
+</div>
+<div>
+<h3 class="font-headline-sm text-headline-sm text-primary">Kopi Nako - Eco Hub Branch</h3>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Bogor Central • Partner since 2023</span>
+</div>
+</div>
+<span class="inline-flex items-center gap-1 bg-secondary-container text-on-secondary-container font-label-sm text-label-sm px-2.5 py-1 rounded-full shrink-0">
+<span class="material-symbols-outlined text-[14px]">verified</span>
+          Zero Landfill
+        </span>
+</div>
+<!-- Real-time Daily Batch Tracker -->
+<div class="bg-surface-container-lowest p-3.5 rounded-xl shadow-sm flex flex-col gap-2.5">
+<div class="flex justify-between items-center">
+<span class="font-label-sm text-label-sm text-on-surface-variant">Today's Batch Processing</span>
+<span class="font-label-md text-label-md text-primary font-semibold">82% Complete</span>
+</div>
+<div class="w-full bg-surface-container-high h-2 rounded-full overflow-hidden">
+<div class="bg-surface-tint h-full w-4/5 rounded-full"></div>
+</div>
+<div class="grid grid-cols-2 gap-2 pt-1">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-tertiary text-[18px]">delete_sweep</span>
+<div>
+<span class="font-label-sm text-label-sm text-on-surface-variant block">Coffee &amp; Food</span>
+<span class="font-label-md text-label-md text-primary font-bold">120 kg today</span>
+</div>
+</div>
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-surface-tint text-[18px]">energy_savings_leaf</span>
+<div>
+<span class="font-label-sm text-label-sm text-on-surface-variant block">Micro-Power</span>
+<span class="font-label-md text-label-md text-primary font-bold">96 kWh generated</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- SECTION 4: BIOGAS AI CHATBOT Q&A -->
+<section class="px-gutter-mobile py-8 bg-surface-container-low flex flex-col gap-5" id="chat">
+<div class="flex flex-col gap-1">
+<div class="flex items-center gap-1.5 text-surface-tint">
+<span class="material-symbols-outlined text-[18px]">psychology</span>
+<span class="font-label-sm text-label-sm uppercase tracking-wide">Autonomous Energy Advisor</span>
+</div>
+<h2 class="font-headline-md text-headline-md text-primary">Ask VerdantAI: Biogas &amp; Energy Assistant</h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+        Have questions about anaerobic digestion ratios, methane conversion, or café payback ROI?
+      </p>
+</div>
+<!-- Suggestion Prompt Chips -->
+<div class="flex gap-2 overflow-x-auto pb-1 no-scrollbar -mx-gutter-mobile px-gutter-mobile" id="promptChips">
+<button class="prompt-chip bg-surface-container-lowest text-primary hover:bg-surface-container text-left px-3.5 py-2 rounded-xl text-label-sm font-label-sm whitespace-nowrap shadow-sm shrink-0">
+        "How does a micro-biogas reactor work?"
+      </button>
+<button class="prompt-chip bg-surface-container-lowest text-primary hover:bg-surface-container text-left px-3.5 py-2 rounded-xl text-label-sm font-label-sm whitespace-nowrap shadow-sm shrink-0">
+        "How many kg of waste equals 1 kWh of power?"
+      </button>
+<button class="prompt-chip bg-surface-container-lowest text-primary hover:bg-surface-container text-left px-3.5 py-2 rounded-xl text-label-sm font-label-sm whitespace-nowrap shadow-sm shrink-0">
+        "What organic materials cannot be digested?"
+      </button>
+<button class="prompt-chip bg-surface-container-lowest text-primary hover:bg-surface-container text-left px-3.5 py-2 rounded-xl text-label-sm font-label-sm whitespace-nowrap shadow-sm shrink-0">
+        "How do cafés monetize waste compost?"
+      </button>
+</div>
+<!-- Chat Container Card -->
+<div class="bg-surface-container-lowest rounded-2xl shadow-md p-4 flex flex-col gap-4">
+<!-- Conversation History -->
+<div class="flex flex-col gap-3.5 max-h-[360px] overflow-y-auto pr-1" id="chatHistory">
+<!-- User Bubble -->
+<div class="flex flex-col items-end">
+<div class="bg-primary-container text-on-primary font-body-sm text-body-sm px-4 py-3 rounded-2xl rounded-br-sm max-w-[85%] shadow-sm">
+            How many kg of coffee grounds &amp; food waste make 1 kWh?
+          </div>
+<span class="font-label-sm text-[10px] text-on-surface-variant mt-1 mr-1">10:42 AM</span>
+</div>
+<!-- AI Bubble -->
+<div class="flex items-start gap-2.5">
+<div class="w-8 h-8 rounded-full bg-secondary-container text-primary flex items-center justify-center shrink-0 shadow-sm">
+<span class="material-symbols-outlined text-[18px]">energy_program_saving</span>
+</div>
+<div class="flex flex-col">
+<div class="bg-surface-container-low text-on-surface font-body-sm text-body-sm px-4 py-3.5 rounded-2xl rounded-bl-sm max-w-[90%] shadow-sm leading-relaxed">
+              On average, approximately <strong class="text-primary font-semibold">1.5 to 2.2 kg</strong> of high-nutrient organic waste (like spent coffee grounds and cooked food scraps) yields roughly <strong class="text-primary font-semibold">1 kWh</strong> of clean electricity through our high-efficiency anaerobic digestion system! That can power an espresso bar for 3 hours.
+            </div>
+<span class="font-label-sm text-[10px] text-on-surface-variant mt-1 ml-1">VerdantAI • Just now</span>
+</div>
+</div>
+</div>
+<!-- Chat Input Field & Send Trigger -->
+<form class="flex items-center gap-2 pt-2 bg-surface-container-low p-2 rounded-2xl" id="chatForm">
+<input class="bg-transparent flex-1 text-on-surface placeholder:text-outline-variant font-body-sm text-body-sm px-2 focus:outline-none" id="chatInput" placeholder="Ask anything about bio-energy..." type="text"/>
+<button aria-label="Send query" class="w-10 h-10 rounded-xl bg-primary text-on-primary flex items-center justify-center shadow-sm active:scale-95 transition-transform shrink-0" type="submit">
+<span class="material-symbols-outlined text-[20px]">send</span>
+</button>
+</form>
+</div>
+</section>
+<!-- SECTION 5: FOOTER -->
+<footer class="px-gutter-mobile pt-10 pb-8 bg-surface-container-highest text-on-surface flex flex-col gap-8">
+<!-- Brand Mission -->
+<div class="flex flex-col gap-3">
+<div class="flex items-center gap-2">
+<img class="w-7 h-7 object-contain" data-alt="Minimalist geometric eco-leaf flame emblem in deep forest green and gold on clean parchment tone." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAWLugIic6z3v5HDODuGY_Wg-wa4YnEQ3Zajgul25NUE56ElJFlR5MKoXJ_VVR51J0wez4cOmRkkK08CGqYqleWL_ssGNasWjQjAbI7_A27QhDf1E4DWF4AniGh7ztPDESLp4ZVbNXkpJOrjHN4xOt1FWUx6JpX7F63qFHSEatImh_5jDAUKdmcpYaa_bFyjld0m0mlO_bxTBa1xAAqBX48mc1o80SHFhc9chHDHIy1KNzyhq9nyeUn"/>
+<span class="font-headline-sm text-headline-sm font-bold text-primary">BioVerdant CleanTech</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+        BioVerdant accelerates decentralized circular economies by turning urban food residues into accessible community energy.
+      </p>
+<div class="inline-flex items-center gap-1.5 self-start px-3 py-1 rounded-full bg-secondary-container text-on-secondary-container font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-[16px]">verified</span>
+        Certified B-Corp Impact Tech
+      </div>
+</div>
+<!-- Quick Navigation Links Grid -->
+<div class="grid grid-cols-2 gap-6">
+<div class="flex flex-col gap-2.5">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-tertiary">Exploration</span>
+<a class="font-body-sm text-body-sm text-on-surface-variant hover:text-primary transition-colors" href="#process">Anaerobic Process</a>
+<a class="font-body-sm text-body-sm text-on-surface-variant hover:text-primary transition-colors" href="#chat">VerdantAI Assistant</a>
+<a class="font-body-sm text-body-sm text-on-surface-variant hover:text-primary transition-colors" href="#">Branch Tracker</a>
+</div>
+<div class="flex flex-col gap-2.5">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-tertiary">Partnerships</span>
+<a class="font-body-sm text-body-sm text-on-surface-variant hover:text-primary transition-colors" href="#">Café Co-ops</a>
+<a class="font-body-sm text-body-sm text-on-surface-variant hover:text-primary transition-colors" href="#">Municipal Bio-Grids</a>
+<a class="font-body-sm text-body-sm text-on-surface-variant hover:text-primary transition-colors" href="#">ESG Reporting</a>
+</div>
+</div>
+<!-- Social & Legal Copyright -->
+<div class="flex flex-col gap-4 pt-4">
+<div class="flex items-center gap-3">
+<a aria-label="Eco-network Hub" class="w-9 h-9 rounded-full bg-surface-container flex items-center justify-center text-primary shadow-sm hover:bg-surface-container-high transition-colors" href="#">
+<span class="material-symbols-outlined text-[18px]">public</span>
+</a>
+<a aria-label="Energy Feed RSS" class="w-9 h-9 rounded-full bg-surface-container flex items-center justify-center text-primary shadow-sm hover:bg-surface-container-high transition-colors" href="#">
+<span class="material-symbols-outlined text-[18px]">rss_feed</span>
+</a>
+<a aria-label="BioVerdant Community" class="w-9 h-9 rounded-full bg-surface-container flex items-center justify-center text-primary shadow-sm hover:bg-surface-container-high transition-colors" href="#">
+<span class="material-symbols-outlined text-[18px]">forum</span>
+</a>
+</div>
+<p class="font-label-sm text-label-sm text-on-surface-variant">
+        © 2025 BioVerdant Technologies Inc. All rights reserved.
+      </p>
+</div>
+</footer>
+</div>
+<script>
+  // Stage Flow Selector logic
+  const stagesData = {
+    1: {
+      title: "Stage 1: Organic Waste Inflow",
+      icon: "coffee_maker",
+      desc: "Food scraps & café coffee ground sorting with moisture spectroscopy and high-speed mechanical shredding for bio-cell readiness.",
+      tags: ["Auto-pH Scan: 6.8", "Moisture: 78%"]
+    },
+    2: {
+      title: "Stage 2: Microbial Anaerobic Digester",
+      icon: "biotech",
+      desc: "Thermophilic bacterial breakdown in sealed digestion chambers with continuous real-time methane purity scrubbing and temperature stabilization.",
+      tags: ["CH4 Purity: 97.8%", "Heat: 54.2°C Optima"]
+    },
+    3: {
+      title: "Stage 3: Clean Energy & Bio-fertilizer Output",
+      icon: "bolt",
+      desc: "Pressurized bio-CNG generation for direct kitchen appliances, micro-turbine electricity export, and nutrient-dense organic fertilizer curing.",
+      tags: ["Power: 124 kWh/batch", "Organic Compost: 42 kg"]
+    }
+  };
+
+  const stageTabs = document.querySelectorAll('.stage-tab');
+  const stageContent = document.getElementById('stageContent');
+  const simulatedProgress = document.getElementById('simulatedProgress');
+
+  stageTabs.forEach(tab => {
+    tab.addEventListener('click', () => {
+      stageTabs.forEach(t => {
+        t.classList.remove('bg-surface-container-lowest', 'text-primary', 'shadow-sm');
+        t.classList.add('text-on-surface-variant');
+      });
+      tab.classList.add('bg-surface-container-lowest', 'text-primary', 'shadow-sm');
+      tab.classList.remove('text-on-surface-variant');
+
+      const stageNum = tab.getAttribute('data-stage');
+      const data = stagesData[stageNum];
+      
+      if (stageNum === '1') simulatedProgress.style.width = '33%';
+      if (stageNum === '2') simulatedProgress.style.width = '66%';
+      if (stageNum === '3') simulatedProgress.style.width = '100%';
+
+      stageContent.innerHTML = `
+        <div class="flex items-center gap-2">
+          <span class="material-symbols-outlined text-surface-tint">${data.icon}</span>
+          <h3 class="font-label-lg text-label-lg text-primary font-semibold">${data.title}</h3>
+        </div>
+        <p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+          ${data.desc}
+        </p>
+        <div class="flex items-center gap-2 mt-1">
+          <span class="px-2 py-0.5 rounded-full bg-secondary-container text-on-secondary-container font-label-sm text-label-sm">${data.tags[0]}</span>
+          <span class="px-2 py-0.5 rounded-full bg-surface-container text-on-surface-variant font-label-sm text-label-sm">${data.tags[1]}</span>
+        </div>
+      `;
+    });
+  });
+
+  // Play button simulation toggle
+  const playBtn = document.getElementById('processPlayBtn');
+  const playIcon = document.getElementById('playIcon');
+  let isPlaying = false;
+  playBtn.addEventListener('click', () => {
+    isPlaying = !isPlaying;
+    playIcon.textContent = isPlaying ? 'pause' : 'play_arrow';
+  });
+
+  // Filter chips interaction
+  const categoryChips = document.querySelectorAll('.cat-chip');
+  categoryChips.forEach(chip => {
+    chip.addEventListener('click', () => {
+      categoryChips.forEach(c => {
+        c.classList.remove('bg-primary-container', 'text-on-primary', 'shadow-sm');
+        c.classList.add('bg-surface-container', 'text-on-surface-variant');
+      });
+      chip.classList.remove('bg-surface-container', 'text-on-surface-variant');
+      chip.classList.add('bg-primary-container', 'text-on-primary', 'shadow-sm');
+    });
+  });
+
+  // Search input clear interaction
+  const searchInput = document.getElementById('branchSearchInput');
+  const clearBtn = document.getElementById('clearSearchBtn');
+  searchInput.addEventListener('input', () => {
+    clearBtn.classList.toggle('hidden', searchInput.value.length === 0);
+  });
+  clearBtn.addEventListener('click', () => {
+    searchInput.value = '';
+    clearBtn.classList.add('hidden');
+    searchInput.focus();
+  });
+
+  // Chat interactive prompt suggestions & message handling
+  const chatHistory = document.getElementById('chatHistory');
+  const chatForm = document.getElementById('chatForm');
+  const chatInput = document.getElementById('chatInput');
+  const promptChips = document.querySelectorAll('.prompt-chip');
+
+  const cannedAnswers = {
+    "reactor": "Our micro-reactor operates thermophilically at 52-55°C. Microorganisms digest cellular pulp within 18 days, collecting gas via an elastic polymer dome with built-in H2S scrubbing.",
+    "kwh": "On average, roughly 1.5 to 2.2 kg of high-density café food scrap yields 1 kWh of usable electrical energy, sufficient for 25 cups of pulled espresso.",
+    "cannot": "Large bovine bones, synthetic waxed coffee cups, compostable PLA plastic lids (which need industrial composting at 70°C+), and excess citrus oils should be minimized.",
+    "monetize": "Cafés can bag nitrogen-rich digester effluent as boutique 'Black Gold Eco-Plant Feed' sold to patrons, turning solid waste removal costs into 15% net retail margin!"
+  };
+
+  function appendChat(query) {
+    // User Bubble
+    const userDiv = document.createElement('div');
+    userDiv.className = 'flex flex-col items-end';
+    userDiv.innerHTML = `
+      <div class="bg-primary-container text-on-primary font-body-sm text-body-sm px-4 py-3 rounded-2xl rounded-br-sm max-w-[85%] shadow-sm">
+        ${query}
+      </div>
+      <span class="font-label-sm text-[10px] text-on-surface-variant mt-1 mr-1">Just now</span>
+    `;
+    chatHistory.appendChild(userDiv);
+
+    // AI Response matching
+    let responseText = cannedAnswers.reactor;
+    const lower = query.toLowerCase();
+    if (lower.includes('kwh') || lower.includes('kg')) responseText = cannedAnswers.kwh;
+    else if (lower.includes('cannot') || lower.includes('materials')) responseText = cannedAnswers.cannot;
+    else if (lower.includes('monetize') || lower.includes('compost')) responseText = cannedAnswers.monetize;
+
+    setTimeout(() => {
+      const aiDiv = document.createElement('div');
+      aiDiv.className = 'flex items-start gap-2.5';
+      aiDiv.innerHTML = `
+        <div class="w-8 h-8 rounded-full bg-secondary-container text-primary flex items-center justify-center shrink-0 shadow-sm">
+          <span class="material-symbols-outlined text-[18px]">energy_program_saving</span>
+        </div>
+        <div class="flex flex-col">
+          <div class="bg-surface-container-low text-on-surface font-body-sm text-body-sm px-4 py-3.5 rounded-2xl rounded-bl-sm max-w-[90%] shadow-sm leading-relaxed">
+            ${responseText}
+          </div>
+          <span class="font-label-sm text-[10px] text-on-surface-variant mt-1 ml-1">VerdantAI • Just now</span>
+        </div>
+      `;
+      chatHistory.appendChild(aiDiv);
+      chatHistory.scrollTop = chatHistory.scrollHeight;
+    }, 450);
+
+    chatHistory.scrollTop = chatHistory.scrollHeight;
+  }
+
+  promptChips.forEach(chip => {
+    chip.addEventListener('click', () => {
+      const text = chip.innerText.replace(/"/g, '').trim();
+      appendChat(text);
+    });
+  });
+
+  chatForm.addEventListener('submit', (e) => {
+    e.preventDefault();
+    const query = chatInput.value.trim();
+    if (!query) return;
+    appendChat(query);
+    chatInput.value = '';
+  });
+</script></main><nav class="fixed bottom-0 inset-x-0 z-50 pb-safe bg-surface/90 backdrop-blur-xl shadow-[0_-2px_12px_rgba(46,32,24,0.06)]" data-active-classes="text-primary font-semibold"><div class="flex justify-around items-center h-16 px-gutter-mobile"><a aria-current="page" class="flex flex-col items-center justify-center gap-0.5 min-w-[44px] min-h-[44px] transition-colors text-primary font-semibold" data-path="overview" href="#"><span class="material-symbols-outlined">eco</span><span class="font-label-sm text-label-sm">Overview</span></a><a class="flex flex-col items-center justify-center gap-0.5 min-w-[44px] min-h-[44px] text-on-surface-variant hover:text-primary transition-colors" data-path="technology" href="#"><span class="material-symbols-outlined">bolt</span><span class="font-label-sm text-label-sm">CleanTech</span></a><a class="flex flex-col items-center justify-center gap-0.5 min-w-[44px] min-h-[44px] text-on-surface-variant hover:text-primary transition-colors" data-path="impact" href="#"><span class="material-symbols-outlined">monitoring</span><span class="font-label-sm text-label-sm">Impact</span></a><a class="flex flex-col items-center justify-center gap-0.5 min-w-[44px] min-h-[44px] text-on-surface-variant hover:text-primary transition-colors" data-path="calculator" href="#"><span class="material-symbols-outlined">calculate</span><span class="font-label-sm text-label-sm">Yield</span></a></div></nav></body></html>
